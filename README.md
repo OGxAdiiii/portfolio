@@ -27,3 +27,6 @@ This site is constantly evolving as I learn more, build more, and grow more. Com
 ---
 
 Thanks for stopping by — and feel free to reach out if something catches your eye or sparks a collaboration idea! 💬
+
+
+🔗 Here's the link to my Portfolio: https://ogxadiiii.github.io/portfolio/
