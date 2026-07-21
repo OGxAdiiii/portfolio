@@ -1,155 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adi's Portfolio</title>
     <link rel="shortcut icon" href="src/imgs/favicon.jpg" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        fadeIn: "fadeIn 1.5s ease-in-out",
-                        bounceSlow: "bounce 2s infinite"
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            "0%": { opacity: 0, transform: "translateY(20px)" },
-                            "100%": { opacity: 1, transform: "translateY(0)" }
-                        }
-                    }
-                }
-            }
-        };
-    </script>
-    
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        .profile-pic {
-            pointer-events: none;
-        }
-    </style>
-</head>
 
-<body class="bg-white text-gray-800 font-sans">
-    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              fadeIn: "fadeIn 1.5s ease-in-out",
+              bounceSlow: "bounce 2s infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: 0, transform: "translateY(20px)" },
+                "100%": { opacity: 1, transform: "translateY(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .profile-pic {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800 font-sans">
     <!-- Header -->
-    <header class="text-center py-12 bg-gradient-to-b from-gray-800 to-black text-white animate-fadeIn">
-        <img src="./src/imgs/portfolio_pic2.jpg" class="profile-pic rounded-full mx-auto mb-4 w-[270px] h-[270px] object-cover shadow-xl hover:scale-105 transition-transform duration-500" alt="Adi's Profile Picture" />
-        <h1 class="text-4xl font-bold mb-2">I'm Aaditya Gharat</h1>
-        <p class="text-lg font-medium mb-4">Web Developer | Creative Coder | Lifelong Learner</p>
-        <a href="#contact" class="inline-block bg-pink-600 hover:bg-pink-500 text-white py-2 px-6 rounded-full shadow-lg transition-all duration-300">
-            Let's Connect
-        </a>
+    <header
+      class="text-center py-12 bg-gradient-to-b from-gray-800 to-black text-white animate-fadeIn"
+    >
+      <img
+        src="./src/imgs/portfolio_pic2.jpg"
+        class="profile-pic rounded-full mx-auto mb-4 w-[270px] h-[270px] object-cover shadow-xl hover:scale-105 transition-transform duration-500"
+        alt="Adi's Profile Picture"
+      />
+      <h1 class="text-4xl font-bold mb-2">I'm Aaditya Gharat</h1>
+      <p class="text-lg font-medium mb-4">
+        Web Developer | Creative Coder | Lifelong Learner
+      </p>
+      <a
+        href="#contact"
+        class="inline-block bg-pink-600 hover:bg-pink-500 text-white py-2 px-6 rounded-full shadow-lg transition-all duration-300"
+      >
+        Let's Connect
+      </a>
     </header>
-    
+
     <main>
-        
-        <!-- About -->
-        <section id="about" class="py-12 px-6 animate-fadeIn">
-            <h2 class="text-center text-3xl font-bold mb-6">About Me</h2>
-            <div class="max-w-3xl mx-auto text-center text-lg leading-relaxed">
-                <p>
-                    I'm Adi, an aspiring web developer with a strong passion for building elegant and efficient digital
-                    experiences. I specialize in front-end development using HTML, CSS, and JavaScript, and I'm
-                    continuously
-                    learning back-end tools like Node.js and Express.js.
-                </p>
-                <br />
-                <p>
-                    I enjoy solving coding challenges, building projects that solve real-world problems, and exploring
-                    how
-                    AI can enhance user experience. I'm currently learning advanced web development, including APIs,
-                    databases, and frameworks.
-                </p>
-            </div>
-        </section>
-        
-<!-- Skills -->
-<section id="skills" class="bg-gray-100 py-12 animate-fadeIn">
-    <h2 class="text-center text-3xl font-bold mb-8">Technical Skills</h2>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 px-8 text-center">
-        <div>
+      <!-- About -->
+      <section id="about" class="py-12 px-6 animate-fadeIn">
+        <h2 class="text-center text-3xl font-bold mb-6">About Me</h2>
+        <div class="max-w-3xl mx-auto text-center text-lg leading-relaxed">
+          <p>
+            I'm Adi, an aspiring web developer with a strong passion for
+            building elegant and efficient digital experiences. I specialize in
+            front-end development using HTML, CSS, and JavaScript, and I'm
+            continuously learning back-end tools like Node.js and Express.js.
+          </p>
+          <br />
+          <p>
+            I enjoy solving coding challenges, building projects that solve
+            real-world problems, and exploring how AI can enhance user
+            experience. I'm currently learning advanced web development,
+            including APIs, databases, and frameworks.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="bg-gray-100 py-12 animate-fadeIn">
+        <h2 class="text-center text-3xl font-bold mb-8">Technical Skills</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 px-8 text-center">
+          <div>
             <h3 class="text-xl font-bold mb-2">Frontend</h3>
             <ul class="space-y-2">
-                <li class="hover:text-pink-600 transition-all duration-300">HTML5</li>
-                <li class="hover:text-pink-600 transition-all duration-300">CSS3</li>
-                <li class="hover:text-pink-600 transition-all duration-300">JavaScript ES6+</li>
-                <li class="hover:text-pink-600 transition-all duration-300">React.js (Basics)</li>
-                <li class="hover:text-pink-600 transition-all duration-300">Redux (Basics)</li>
-                <li class="hover:text-pink-600 transition-all duration-300">Bootstrap</li>
-                <li class="hover:text-pink-600 transition-all duration-300">Responsive Design</li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                HTML5
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                CSS3
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                JavaScript ES6+
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                React.js (Basics)
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Redux (Basics)
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Bootstrap
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Responsive Design
+              </li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h3 class="text-xl font-bold mb-2">Backend</h3>
             <ul class="space-y-2">
-                <li class="hover:text-pink-600 transition-all duration-300">Node.js</li>
-                <li class="hover:text-pink-600 transition-all duration-300">Express.js</li>
-                <li class="hover:text-pink-600 transition-all duration-300">MongoDB (Basics)</li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Node.js
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Express.js
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                MongoDB (Basics)
+              </li>
             </ul>
-        </div>
-        
-        <div>
+          </div>
+
+          <div>
             <h3 class="text-xl font-bold mb-2">Tools</h3>
             <ul class="space-y-2">
-                <li class="hover:text-pink-600 transition-all duration-300">Git & GitHub</li>
-                <li class="hover:text-pink-600 transition-all duration-300">VS Code</li>
-                <li class="hover:text-pink-600 transition-all duration-300">Postman</li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Git & GitHub
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                VS Code
+              </li>
+              <li class="hover:text-pink-600 transition-all duration-300">
+                Postman
+              </li>
             </ul>
+          </div>
         </div>
-    </div>
-</section>
-        
-        <!-- Projects -->
-        <section id="projects" class="bg-white py-12">
-            <h2 class="text-center text-3xl font-bold mb-10">My Projects</h2>
-            
-            <div class="grid md:grid-cols-2 gap-6 px-6">
-                <article class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
-                    <h3 class="text-xl font-semibold">Coming Soon</h3>
-                    <p class="text-gray-600 mt-2">Stay tuned for exciting upcoming projects!</p>
-                    <p class="text-sm mt-2"><strong>Tech Used:</strong> To be updated</p>
-                    <pre class="mt-2"><a href="#" class="text-pink-600">GitHub</a>  |   <a href="#" class="text-pink-600">Live Demo</a></pre>
-                </article>
-                
-                <article class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
-                    <h3 class="text-xl font-semibold">Coming Soon</h3>
-                    <p class="text-gray-600 mt-2">More creative projects on the way.</p>
-                    <p class="text-sm mt-2"><strong>Tech Used:</strong> To be updated</p>
-                    <pre class="mt-2"><a href="#" class="text-pink-600">GitHub</a>  |   <a href="#" class="text-pink-600">Live Demo</a></pre>
-                </article>
-            </div>
-        </section>
-        
-        <!-- Contact -->
-        <section id="contact" class="py-12 bg-gray-100 animate-fadeIn">
-            <h2 class="text-center text-3xl font-bold mb-8">Contact Me</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-lg">
-                <p>Email: <a href="mailto:adityaagharat777@gmail.com" class="text-pink-600 hover:underline">Aditya
-                        Gharat</a></p>
-                <p>GitHub: <a href="https://www.github.com/OGxAdiiii" class="text-pink-600 hover:underline">OGxAdiiii</a></p>
-                <p>Instagram: <a href="https://www.instagram.com/0xadii.1" class="text-pink-600 hover:underline">0xadii.1</a></p>
-            </div>
-        </section>
-        
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6 mt-10 animate-fadeIn">
-        <p class="text-lg italic">“Code is like humor. When you have to explain it, it’s bad.”</p>
-        <p class="mt-2">&copy; 2025 Adi. Built with love and clean code.</p>
-    </footer>
-    
-</body>
+      </section>
 
+      <!-- Projects -->
+      <section id="projects" class="bg-white py-12">
+        <h2 class="text-center text-3xl font-bold mb-10">My Projects</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 px-6">
+          <article
+            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105"
+          >
+            <h3 class="text-xl font-semibold">Coming Soon</h3>
+            <p class="text-gray-600 mt-2">
+              Stay tuned for exciting upcoming projects!
+            </p>
+            <p class="text-sm mt-2">
+              <strong>Tech Used:</strong> To be updated
+            </p>
+            <pre
+              class="mt-2"
+            ><a href="#" class="text-pink-600">GitHub</a>  |   <a href="#" class="text-pink-600">Live Demo</a></pre>
+          </article>
+
+          <article
+            class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105"
+          >
+            <h3 class="text-xl font-semibold">Coming Soon</h3>
+            <p class="text-gray-600 mt-2">More creative projects on the way.</p>
+            <p class="text-sm mt-2">
+              <strong>Tech Used:</strong> To be updated
+            </p>
+            <pre
+              class="mt-2"
+            ><a href="#" class="text-pink-600">GitHub</a>  |   <a href="#" class="text-pink-600">Live Demo</a></pre>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-12 bg-gray-100 animate-fadeIn">
+        <h2 class="text-center text-3xl font-bold mb-8">Contact Me</h2>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-lg"
+        >
+          <p>
+            Email:
+            <a
+              href="mailto:adityaagharat777@gmail.com"
+              class="text-pink-600 hover:underline"
+              >Aditya Gharat
+            </a>
+          </p>
+          <p>
+            GitHub:
+            <a
+              href="https://www.github.com/OGxAdiiii"
+              class="text-pink-600 hover:underline"
+              >OGxAdiiii</a
+            >
+          </p>
+          <p>
+            Instagram:
+            <a
+              href="https://www.instagram.com/0xadii.1"
+              class="text-pink-600 hover:underline"
+              >0xadii.1</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 text-white text-center py-6 mt-10 animate-fadeIn"
+    >
+      <p class="text-lg italic">
+        “Code is like humor. When you have to explain it, it’s bad.”
+      </p>
+      <p class="mt-2">&copy; 2025 Adi. Built with love and clean code.</p>
+    </footer>
+  </body>
 </html>
